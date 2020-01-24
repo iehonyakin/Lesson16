@@ -1,0 +1,1579 @@
+24-Jan 08:06 bacula-dir JobId 1: No prior Full backup Job record found.
+24-Jan 08:06 bacula-dir JobId 1: No prior or suitable Full backup found in catalog. Doing FULL backup.
+24-Jan 08:06 bacula-dir JobId 1: Start Backup JobId 1, Job=BackupClient1.2020-01-24_08.06.37_03
+24-Jan 08:06 bacula-dir JobId 1: Using Device "FileStorage" to write.
+24-Jan 08:06 bacula-sd JobId 1: Job BackupClient1.2020-01-24_08.06.37_03 is waiting. Cannot find any appendable volumes.
+Please use the "label" command to create a new Volume for:
+    Storage:      "FileStorage" (/bacula/backup)
+    Pool:         File
+    Media type:   File
+24-Jan 08:07 bacula-sd JobId 1: Wrote label to prelabeled Volume "v1" on device "FileStorage" (/bacula/backup)
+24-Jan 08:07 client1-fd JobId 1:      Could not stat "/var/lib/eventstore/": ERR=No such file or directory
+24-Jan 08:07 bacula-sd JobId 1: Elapsed time=00:00:01, Transfer rate=0  Bytes/second
+24-Jan 08:07 bacula-dir JobId 1: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  1
+  Job:                    BackupClient1.2020-01-24_08.06.37_03
+  Backup Level:           Full (upgraded from Incremental)
+  Client:                 "client1-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 08:06:37
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 08:06:35
+  Start time:             24-Jan-2020 08:06:40
+  End time:               24-Jan-2020 08:07:31
+  Elapsed time:           51 secs
+  Priority:               10
+  FD Files Written:       0
+  SD Files Written:       0
+  FD Bytes Written:       0 (0 B)
+  SD Bytes Written:       0 (0 B)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         
+  Volume Session Id:      1
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      600 (600 B)
+  Non-fatal FD errors:    1
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK -- with warnings
+
+24-Jan 08:07 bacula-dir JobId 1: Begin pruning Jobs older than 6 months .
+24-Jan 08:07 bacula-dir JobId 1: No Jobs found to prune.
+24-Jan 08:07 bacula-dir JobId 1: Begin pruning Files.
+24-Jan 08:07 bacula-dir JobId 1: No Files found to prune.
+24-Jan 08:07 bacula-dir JobId 1: End auto prune.
+
+24-Jan 08:20 bacula-dir JobId 2: Start Backup JobId 2, Job=BackupClient1.2020-01-24_08.20.00_03
+24-Jan 08:20 bacula-dir JobId 2: Using Device "FileStorage" to write.
+24-Jan 08:20 bacula-sd JobId 2: Volume "v1" previously written, moving to end of data.
+24-Jan 08:20 bacula-sd JobId 2: Ready to append to end of Volume "v1" size=600
+24-Jan 08:20 client1-fd JobId 2:      Could not stat "/var/lib/eventstore/": ERR=No such file or directory
+24-Jan 08:20 bacula-sd JobId 2: Elapsed time=00:00:01, Transfer rate=0  Bytes/second
+24-Jan 08:20 bacula-dir JobId 2: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  2
+  Job:                    BackupClient1.2020-01-24_08.20.00_03
+  Backup Level:           Incremental, since=2020-01-24 08:06:40
+  Client:                 "client1-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 08:06:37
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 08:20:00
+  Start time:             24-Jan-2020 08:20:02
+  End time:               24-Jan-2020 08:20:03
+  Elapsed time:           1 sec
+  Priority:               10
+  FD Files Written:       0
+  SD Files Written:       0
+  FD Bytes Written:       0 (0 B)
+  SD Bytes Written:       0 (0 B)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         
+  Volume Session Id:      2
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      1,006 (1.006 KB)
+  Non-fatal FD errors:    1
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK -- with warnings
+
+24-Jan 08:20 bacula-dir JobId 2: Begin pruning Jobs older than 6 months .
+24-Jan 08:20 bacula-dir JobId 2: No Jobs found to prune.
+24-Jan 08:20 bacula-dir JobId 2: Begin pruning Files.
+24-Jan 08:20 bacula-dir JobId 2: No Files found to prune.
+24-Jan 08:20 bacula-dir JobId 2: End auto prune.
+
+24-Jan 08:20 bacula-dir JobId 3: No prior Full backup Job record found.
+24-Jan 08:20 bacula-dir JobId 3: No prior or suitable Full backup found in catalog. Doing FULL backup.
+24-Jan 08:20 bacula-dir JobId 3: Start Backup JobId 3, Job=BackupClient2.2020-01-24_08.20.00_04
+24-Jan 08:20 bacula-dir JobId 3: Using Device "FileStorage" to write.
+24-Jan 08:20 bacula-sd JobId 3: Volume "v1" previously written, moving to end of data.
+24-Jan 08:20 bacula-sd JobId 3: Ready to append to end of Volume "v1" size=1006
+24-Jan 08:20 client2-fd JobId 3:      Could not stat "/var/lib/eventstore/": ERR=No such file or directory
+24-Jan 08:20 bacula-sd JobId 3: Elapsed time=00:00:01, Transfer rate=0  Bytes/second
+24-Jan 08:20 bacula-dir JobId 3: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  3
+  Job:                    BackupClient2.2020-01-24_08.20.00_04
+  Backup Level:           Full (upgraded from Incremental)
+  Client:                 "client2-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 08:06:37
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 08:20:00
+  Start time:             24-Jan-2020 08:20:05
+  End time:               24-Jan-2020 08:20:05
+  Elapsed time:           0 secs
+  Priority:               10
+  FD Files Written:       0
+  SD Files Written:       0
+  FD Bytes Written:       0 (0 B)
+  SD Bytes Written:       0 (0 B)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         
+  Volume Session Id:      3
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      1,412 (1.412 KB)
+  Non-fatal FD errors:    1
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK -- with warnings
+
+24-Jan 08:20 bacula-dir JobId 3: Begin pruning Jobs older than 6 months .
+24-Jan 08:20 bacula-dir JobId 3: No Jobs found to prune.
+24-Jan 08:20 bacula-dir JobId 3: Begin pruning Files.
+24-Jan 08:20 bacula-dir JobId 3: No Files found to prune.
+24-Jan 08:20 bacula-dir JobId 3: End auto prune.
+
+24-Jan 08:30 bacula-dir JobId 4: Start Backup JobId 4, Job=BackupClient1.2020-01-24_08.30.00_03
+24-Jan 08:30 bacula-dir JobId 4: Using Device "FileStorage" to write.
+24-Jan 08:30 bacula-sd JobId 4: Volume "v1" previously written, moving to end of data.
+24-Jan 08:30 bacula-sd JobId 4: Ready to append to end of Volume "v1" size=1412
+24-Jan 08:30 client1-fd JobId 4:      Could not stat "/var/lib/eventstore/": ERR=No such file or directory
+24-Jan 08:30 bacula-sd JobId 4: Elapsed time=00:00:01, Transfer rate=0  Bytes/second
+24-Jan 08:30 bacula-dir JobId 4: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  4
+  Job:                    BackupClient1.2020-01-24_08.30.00_03
+  Backup Level:           Incremental, since=2020-01-24 08:20:02
+  Client:                 "client1-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 08:06:37
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 08:30:00
+  Start time:             24-Jan-2020 08:30:02
+  End time:               24-Jan-2020 08:30:02
+  Elapsed time:           0 secs
+  Priority:               10
+  FD Files Written:       0
+  SD Files Written:       0
+  FD Bytes Written:       0 (0 B)
+  SD Bytes Written:       0 (0 B)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         
+  Volume Session Id:      4
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      1,818 (1.818 KB)
+  Non-fatal FD errors:    1
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK -- with warnings
+
+24-Jan 08:30 bacula-dir JobId 4: Begin pruning Jobs older than 6 months .
+24-Jan 08:30 bacula-dir JobId 4: No Jobs found to prune.
+24-Jan 08:30 bacula-dir JobId 4: Begin pruning Files.
+24-Jan 08:30 bacula-dir JobId 4: No Files found to prune.
+24-Jan 08:30 bacula-dir JobId 4: End auto prune.
+
+24-Jan 08:30 bacula-dir JobId 5: Start Backup JobId 5, Job=BackupClient2.2020-01-24_08.30.00_04
+24-Jan 08:30 bacula-dir JobId 5: Using Device "FileStorage" to write.
+24-Jan 08:30 bacula-sd JobId 5: Volume "v1" previously written, moving to end of data.
+24-Jan 08:30 bacula-sd JobId 5: Ready to append to end of Volume "v1" size=1818
+24-Jan 08:30 client2-fd JobId 5:      Could not stat "/var/lib/eventstore/": ERR=No such file or directory
+24-Jan 08:30 bacula-sd JobId 5: Elapsed time=00:00:01, Transfer rate=0  Bytes/second
+24-Jan 08:30 bacula-dir JobId 5: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  5
+  Job:                    BackupClient2.2020-01-24_08.30.00_04
+  Backup Level:           Incremental, since=2020-01-24 08:20:05
+  Client:                 "client2-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 08:06:37
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 08:30:00
+  Start time:             24-Jan-2020 08:30:04
+  End time:               24-Jan-2020 08:30:05
+  Elapsed time:           1 sec
+  Priority:               10
+  FD Files Written:       0
+  SD Files Written:       0
+  FD Bytes Written:       0 (0 B)
+  SD Bytes Written:       0 (0 B)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         
+  Volume Session Id:      5
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      2,224 (2.224 KB)
+  Non-fatal FD errors:    1
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK -- with warnings
+
+24-Jan 08:30 bacula-dir JobId 5: Begin pruning Jobs older than 6 months .
+24-Jan 08:30 bacula-dir JobId 5: No Jobs found to prune.
+24-Jan 08:30 bacula-dir JobId 5: Begin pruning Files.
+24-Jan 08:30 bacula-dir JobId 5: No Files found to prune.
+24-Jan 08:30 bacula-dir JobId 5: End auto prune.
+
+24-Jan 08:35 bacula-dir JobId 6: Start Backup JobId 6, Job=BackupClient1.2020-01-24_08.35.00_04
+24-Jan 08:35 bacula-dir JobId 6: Using Device "FileStorage" to write.
+24-Jan 08:35 bacula-sd JobId 6: Volume "v1" previously written, moving to end of data.
+24-Jan 08:35 bacula-sd JobId 6: Ready to append to end of Volume "v1" size=2224
+24-Jan 08:35 client1-fd JobId 6:      Could not stat "/var/lib/eventstore/": ERR=No such file or directory
+24-Jan 08:35 bacula-sd JobId 6: Elapsed time=00:00:01, Transfer rate=0  Bytes/second
+24-Jan 08:35 bacula-dir JobId 6: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  6
+  Job:                    BackupClient1.2020-01-24_08.35.00_04
+  Backup Level:           Full
+  Client:                 "client1-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 08:06:37
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 08:35:00
+  Start time:             24-Jan-2020 08:35:03
+  End time:               24-Jan-2020 08:35:03
+  Elapsed time:           0 secs
+  Priority:               10
+  FD Files Written:       0
+  SD Files Written:       0
+  FD Bytes Written:       0 (0 B)
+  SD Bytes Written:       0 (0 B)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         
+  Volume Session Id:      6
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      2,630 (2.630 KB)
+  Non-fatal FD errors:    1
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK -- with warnings
+
+24-Jan 08:35 bacula-dir JobId 6: Begin pruning Jobs older than 6 months .
+24-Jan 08:35 bacula-dir JobId 6: No Jobs found to prune.
+24-Jan 08:35 bacula-dir JobId 6: Begin pruning Files.
+24-Jan 08:35 bacula-dir JobId 6: No Files found to prune.
+24-Jan 08:35 bacula-dir JobId 6: End auto prune.
+
+24-Jan 08:35 bacula-dir JobId 7: Start Backup JobId 7, Job=BackupClient1.2020-01-24_08.35.00_05
+24-Jan 08:35 bacula-dir JobId 7: Using Device "FileStorage" to write.
+24-Jan 08:35 bacula-sd JobId 7: Volume "v1" previously written, moving to end of data.
+24-Jan 08:35 bacula-sd JobId 7: Ready to append to end of Volume "v1" size=2630
+24-Jan 08:35 client1-fd JobId 7:      Could not stat "/var/lib/eventstore/": ERR=No such file or directory
+24-Jan 08:35 bacula-sd JobId 7: Elapsed time=00:00:01, Transfer rate=0  Bytes/second
+24-Jan 08:35 bacula-dir JobId 7: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  7
+  Job:                    BackupClient1.2020-01-24_08.35.00_05
+  Backup Level:           Differential, since=2020-01-24 08:06:40
+  Client:                 "client1-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 08:06:37
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 08:35:00
+  Start time:             24-Jan-2020 08:35:05
+  End time:               24-Jan-2020 08:35:05
+  Elapsed time:           0 secs
+  Priority:               10
+  FD Files Written:       0
+  SD Files Written:       0
+  FD Bytes Written:       0 (0 B)
+  SD Bytes Written:       0 (0 B)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         
+  Volume Session Id:      7
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      3,036 (3.036 KB)
+  Non-fatal FD errors:    1
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK -- with warnings
+
+24-Jan 08:35 bacula-dir JobId 7: Begin pruning Jobs older than 6 months .
+24-Jan 08:35 bacula-dir JobId 7: No Jobs found to prune.
+24-Jan 08:35 bacula-dir JobId 7: Begin pruning Files.
+24-Jan 08:35 bacula-dir JobId 7: No Files found to prune.
+24-Jan 08:35 bacula-dir JobId 7: End auto prune.
+
+24-Jan 08:35 bacula-dir JobId 8: Start Backup JobId 8, Job=BackupClient2.2020-01-24_08.35.00_06
+24-Jan 08:35 bacula-dir JobId 8: Using Device "FileStorage" to write.
+24-Jan 08:35 bacula-sd JobId 8: Volume "v1" previously written, moving to end of data.
+24-Jan 08:35 bacula-sd JobId 8: Ready to append to end of Volume "v1" size=3036
+24-Jan 08:35 client2-fd JobId 8:      Could not stat "/var/lib/eventstore/": ERR=No such file or directory
+24-Jan 08:35 bacula-sd JobId 8: Elapsed time=00:00:01, Transfer rate=0  Bytes/second
+24-Jan 08:35 bacula-dir JobId 8: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  8
+  Job:                    BackupClient2.2020-01-24_08.35.00_06
+  Backup Level:           Full
+  Client:                 "client2-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 08:06:37
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 08:35:00
+  Start time:             24-Jan-2020 08:35:08
+  End time:               24-Jan-2020 08:35:08
+  Elapsed time:           0 secs
+  Priority:               10
+  FD Files Written:       0
+  SD Files Written:       0
+  FD Bytes Written:       0 (0 B)
+  SD Bytes Written:       0 (0 B)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         
+  Volume Session Id:      8
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      3,442 (3.442 KB)
+  Non-fatal FD errors:    1
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK -- with warnings
+
+24-Jan 08:35 bacula-dir JobId 8: Begin pruning Jobs older than 6 months .
+24-Jan 08:35 bacula-dir JobId 8: No Jobs found to prune.
+24-Jan 08:35 bacula-dir JobId 8: Begin pruning Files.
+24-Jan 08:35 bacula-dir JobId 8: No Files found to prune.
+24-Jan 08:35 bacula-dir JobId 8: End auto prune.
+
+24-Jan 08:35 bacula-dir JobId 9: Start Backup JobId 9, Job=BackupClient2.2020-01-24_08.35.00_07
+24-Jan 08:35 bacula-dir JobId 9: Using Device "FileStorage" to write.
+24-Jan 08:35 bacula-sd JobId 9: Volume "v1" previously written, moving to end of data.
+24-Jan 08:35 bacula-sd JobId 9: Ready to append to end of Volume "v1" size=3442
+24-Jan 08:35 client2-fd JobId 9:      Could not stat "/var/lib/eventstore/": ERR=No such file or directory
+24-Jan 08:35 bacula-sd JobId 9: Elapsed time=00:00:01, Transfer rate=0  Bytes/second
+24-Jan 08:35 bacula-dir JobId 9: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  9
+  Job:                    BackupClient2.2020-01-24_08.35.00_07
+  Backup Level:           Differential, since=2020-01-24 08:20:05
+  Client:                 "client2-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 08:06:37
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 08:35:00
+  Start time:             24-Jan-2020 08:35:10
+  End time:               24-Jan-2020 08:35:10
+  Elapsed time:           0 secs
+  Priority:               10
+  FD Files Written:       0
+  SD Files Written:       0
+  FD Bytes Written:       0 (0 B)
+  SD Bytes Written:       0 (0 B)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         
+  Volume Session Id:      9
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      3,848 (3.848 KB)
+  Non-fatal FD errors:    1
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK -- with warnings
+
+24-Jan 08:35 bacula-dir JobId 9: Begin pruning Jobs older than 6 months .
+24-Jan 08:35 bacula-dir JobId 9: No Jobs found to prune.
+24-Jan 08:35 bacula-dir JobId 9: Begin pruning Files.
+24-Jan 08:35 bacula-dir JobId 9: No Files found to prune.
+24-Jan 08:35 bacula-dir JobId 9: End auto prune.
+
+24-Jan 08:40 bacula-dir JobId 10: Start Backup JobId 10, Job=BackupClient1.2020-01-24_08.40.00_03
+24-Jan 08:40 bacula-dir JobId 10: Using Device "FileStorage" to write.
+24-Jan 08:40 bacula-sd JobId 10: Volume "v1" previously written, moving to end of data.
+24-Jan 08:40 bacula-sd JobId 10: Ready to append to end of Volume "v1" size=3848
+24-Jan 08:40 client1-fd JobId 10:      Could not stat "/var/lib/eventstore/": ERR=No such file or directory
+24-Jan 08:40 bacula-sd JobId 10: Elapsed time=00:00:01, Transfer rate=0  Bytes/second
+24-Jan 08:40 bacula-dir JobId 10: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  10
+  Job:                    BackupClient1.2020-01-24_08.40.00_03
+  Backup Level:           Incremental, since=2020-01-24 08:35:05
+  Client:                 "client1-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 08:06:37
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 08:40:00
+  Start time:             24-Jan-2020 08:40:03
+  End time:               24-Jan-2020 08:40:03
+  Elapsed time:           0 secs
+  Priority:               10
+  FD Files Written:       0
+  SD Files Written:       0
+  FD Bytes Written:       0 (0 B)
+  SD Bytes Written:       0 (0 B)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         
+  Volume Session Id:      10
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      4,254 (4.254 KB)
+  Non-fatal FD errors:    1
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK -- with warnings
+
+24-Jan 08:40 bacula-dir JobId 10: Begin pruning Jobs older than 6 months .
+24-Jan 08:40 bacula-dir JobId 10: No Jobs found to prune.
+24-Jan 08:40 bacula-dir JobId 10: Begin pruning Files.
+24-Jan 08:40 bacula-dir JobId 10: No Files found to prune.
+24-Jan 08:40 bacula-dir JobId 10: End auto prune.
+
+24-Jan 08:40 bacula-dir JobId 11: Start Backup JobId 11, Job=BackupClient2.2020-01-24_08.40.00_04
+24-Jan 08:40 bacula-dir JobId 11: Using Device "FileStorage" to write.
+24-Jan 08:40 bacula-sd JobId 11: Volume "v1" previously written, moving to end of data.
+24-Jan 08:40 bacula-sd JobId 11: Ready to append to end of Volume "v1" size=4254
+24-Jan 08:40 client2-fd JobId 11:      Could not stat "/var/lib/eventstore/": ERR=No such file or directory
+24-Jan 08:40 bacula-sd JobId 11: Elapsed time=00:00:01, Transfer rate=0  Bytes/second
+24-Jan 08:40 bacula-dir JobId 11: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  11
+  Job:                    BackupClient2.2020-01-24_08.40.00_04
+  Backup Level:           Incremental, since=2020-01-24 08:35:10
+  Client:                 "client2-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 08:06:37
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 08:40:00
+  Start time:             24-Jan-2020 08:40:05
+  End time:               24-Jan-2020 08:40:05
+  Elapsed time:           0 secs
+  Priority:               10
+  FD Files Written:       0
+  SD Files Written:       0
+  FD Bytes Written:       0 (0 B)
+  SD Bytes Written:       0 (0 B)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         
+  Volume Session Id:      11
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      4,660 (4.660 KB)
+  Non-fatal FD errors:    1
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK -- with warnings
+
+24-Jan 08:40 bacula-dir JobId 11: Begin pruning Jobs older than 6 months .
+24-Jan 08:40 bacula-dir JobId 11: No Jobs found to prune.
+24-Jan 08:40 bacula-dir JobId 11: Begin pruning Files.
+24-Jan 08:40 bacula-dir JobId 11: No Files found to prune.
+24-Jan 08:40 bacula-dir JobId 11: End auto prune.
+
+24-Jan 08:40 bacula-dir JobId 12: shell command: run BeforeJob "/usr/libexec/bacula/make_catalog_backup.pl MyCatalog"
+24-Jan 08:40 bacula-dir JobId 12: Start Backup JobId 12, Job=BackupCatalog.2020-01-24_08.40.00_05
+24-Jan 08:40 bacula-dir JobId 12: Using Device "FileStorage" to write.
+24-Jan 08:40 bacula-sd JobId 12: Volume "v1" previously written, moving to end of data.
+24-Jan 08:40 bacula-sd JobId 12: Ready to append to end of Volume "v1" size=4660
+24-Jan 08:40 bacula-sd JobId 12: Elapsed time=00:00:01, Transfer rate=85.33 K Bytes/second
+24-Jan 08:40 bacula-dir JobId 12: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  12
+  Job:                    BackupCatalog.2020-01-24_08.40.00_05
+  Backup Level:           Full
+  Client:                 "server-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Catalog" 2020-01-24 08:40:00
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 08:40:00
+  Start time:             24-Jan-2020 08:40:08
+  End time:               24-Jan-2020 08:40:08
+  Elapsed time:           0 secs
+  Priority:               11
+  FD Files Written:       1
+  SD Files Written:       1
+  FD Bytes Written:       85,218 (85.21 KB)
+  SD Bytes Written:       85,331 (85.33 KB)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         v1
+  Volume Session Id:      12
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      90,473 (90.47 KB)
+  Non-fatal FD errors:    0
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK
+
+24-Jan 08:40 bacula-dir JobId 12: Begin pruning Jobs older than 6 months .
+24-Jan 08:40 bacula-dir JobId 12: No Jobs found to prune.
+24-Jan 08:40 bacula-dir JobId 12: Begin pruning Files.
+24-Jan 08:40 bacula-dir JobId 12: No Files found to prune.
+24-Jan 08:40 bacula-dir JobId 12: End auto prune.
+
+24-Jan 08:40 bacula-dir JobId 12: shell command: run AfterJob "/usr/libexec/bacula/delete_catalog_backup"
+24-Jan 08:45 bacula-dir JobId 13: shell command: run BeforeJob "/usr/libexec/bacula/make_catalog_backup.pl MyCatalog"
+24-Jan 08:45 bacula-dir JobId 13: Start Backup JobId 13, Job=BackupCatalog.2020-01-24_08.45.00_03
+24-Jan 08:45 bacula-dir JobId 13: Using Device "FileStorage" to write.
+24-Jan 08:45 bacula-sd JobId 13: Volume "v1" previously written, moving to end of data.
+24-Jan 08:45 bacula-sd JobId 13: Ready to append to end of Volume "v1" size=90473
+24-Jan 08:45 bacula-sd JobId 13: Elapsed time=00:00:01, Transfer rate=88.31 K Bytes/second
+24-Jan 08:45 bacula-dir JobId 13: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  13
+  Job:                    BackupCatalog.2020-01-24_08.45.00_03
+  Backup Level:           Full
+  Client:                 "server-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Catalog" 2020-01-24 08:40:00
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 08:45:00
+  Start time:             24-Jan-2020 08:45:03
+  End time:               24-Jan-2020 08:45:03
+  Elapsed time:           0 secs
+  Priority:               11
+  FD Files Written:       1
+  SD Files Written:       1
+  FD Bytes Written:       88,202 (88.20 KB)
+  SD Bytes Written:       88,314 (88.31 KB)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         v1
+  Volume Session Id:      13
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      179,269 (179.2 KB)
+  Non-fatal FD errors:    0
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK
+
+24-Jan 08:45 bacula-dir JobId 13: Begin pruning Jobs older than 6 months .
+24-Jan 08:45 bacula-dir JobId 13: No Jobs found to prune.
+24-Jan 08:45 bacula-dir JobId 13: Begin pruning Files.
+24-Jan 08:45 bacula-dir JobId 13: No Files found to prune.
+24-Jan 08:45 bacula-dir JobId 13: End auto prune.
+
+24-Jan 08:45 bacula-dir JobId 13: shell command: run AfterJob "/usr/libexec/bacula/delete_catalog_backup"
+24-Jan 08:50 bacula-dir JobId 14: Start Backup JobId 14, Job=BackupClient1.2020-01-24_08.50.00_05
+24-Jan 08:50 bacula-dir JobId 14: Using Device "FileStorage" to write.
+24-Jan 08:50 bacula-sd JobId 14: Volume "v1" previously written, moving to end of data.
+24-Jan 08:50 bacula-sd JobId 14: Ready to append to end of Volume "v1" size=179269
+24-Jan 08:50 client1-fd JobId 14:      Could not stat "/var/lib/eventstore/": ERR=No such file or directory
+24-Jan 08:50 bacula-sd JobId 14: Elapsed time=00:00:01, Transfer rate=0  Bytes/second
+24-Jan 08:50 bacula-dir JobId 14: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  14
+  Job:                    BackupClient1.2020-01-24_08.50.00_05
+  Backup Level:           Incremental, since=2020-01-24 08:40:03
+  Client:                 "client1-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 08:06:37
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 08:50:00
+  Start time:             24-Jan-2020 08:50:03
+  End time:               24-Jan-2020 08:50:03
+  Elapsed time:           0 secs
+  Priority:               10
+  FD Files Written:       0
+  SD Files Written:       0
+  FD Bytes Written:       0 (0 B)
+  SD Bytes Written:       0 (0 B)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         
+  Volume Session Id:      14
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      179,675 (179.6 KB)
+  Non-fatal FD errors:    1
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK -- with warnings
+
+24-Jan 08:50 bacula-dir JobId 14: Begin pruning Jobs older than 6 months .
+24-Jan 08:50 bacula-dir JobId 14: No Jobs found to prune.
+24-Jan 08:50 bacula-dir JobId 14: Begin pruning Files.
+24-Jan 08:50 bacula-dir JobId 14: No Files found to prune.
+24-Jan 08:50 bacula-dir JobId 14: End auto prune.
+
+24-Jan 08:50 bacula-dir JobId 15: Start Backup JobId 15, Job=BackupClient2.2020-01-24_08.50.00_06
+24-Jan 08:50 bacula-dir JobId 15: Using Device "FileStorage" to write.
+24-Jan 08:50 bacula-sd JobId 15: Volume "v1" previously written, moving to end of data.
+24-Jan 08:50 bacula-sd JobId 15: Ready to append to end of Volume "v1" size=179675
+24-Jan 08:50 client2-fd JobId 15:      Could not stat "/var/lib/eventstore/": ERR=No such file or directory
+24-Jan 08:50 bacula-sd JobId 15: Elapsed time=00:00:01, Transfer rate=0  Bytes/second
+24-Jan 08:50 bacula-dir JobId 15: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  15
+  Job:                    BackupClient2.2020-01-24_08.50.00_06
+  Backup Level:           Incremental, since=2020-01-24 08:40:05
+  Client:                 "client2-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 08:06:37
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 08:50:00
+  Start time:             24-Jan-2020 08:50:05
+  End time:               24-Jan-2020 08:50:06
+  Elapsed time:           1 sec
+  Priority:               10
+  FD Files Written:       0
+  SD Files Written:       0
+  FD Bytes Written:       0 (0 B)
+  SD Bytes Written:       0 (0 B)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         
+  Volume Session Id:      15
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      180,081 (180.0 KB)
+  Non-fatal FD errors:    1
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK -- with warnings
+
+24-Jan 08:50 bacula-dir JobId 15: Begin pruning Jobs older than 6 months .
+24-Jan 08:50 bacula-dir JobId 15: No Jobs found to prune.
+24-Jan 08:50 bacula-dir JobId 15: Begin pruning Files.
+24-Jan 08:50 bacula-dir JobId 15: No Files found to prune.
+24-Jan 08:50 bacula-dir JobId 15: End auto prune.
+
+24-Jan 08:50 bacula-dir JobId 16: Start Backup JobId 16, Job=BackupClient1.2020-01-24_08.50.32_02
+24-Jan 08:50 bacula-dir JobId 16: Using Device "FileStorage" to write.
+24-Jan 08:50 bacula-sd JobId 16: Volume "v1" previously written, moving to end of data.
+24-Jan 08:50 bacula-sd JobId 16: Ready to append to end of Volume "v1" size=180081
+24-Jan 08:50 client1-fd JobId 16:      Could not stat "/var/lib/eventstore/": ERR=No such file or directory
+24-Jan 08:50 bacula-sd JobId 16: Elapsed time=00:00:01, Transfer rate=0  Bytes/second
+24-Jan 08:50 bacula-dir JobId 16: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  16
+  Job:                    BackupClient1.2020-01-24_08.50.32_02
+  Backup Level:           Incremental, since=2020-01-24 08:50:03
+  Client:                 "client1-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 08:06:37
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 08:50:32
+  Start time:             24-Jan-2020 08:50:34
+  End time:               24-Jan-2020 08:50:35
+  Elapsed time:           1 sec
+  Priority:               10
+  FD Files Written:       0
+  SD Files Written:       0
+  FD Bytes Written:       0 (0 B)
+  SD Bytes Written:       0 (0 B)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         
+  Volume Session Id:      16
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      180,487 (180.4 KB)
+  Non-fatal FD errors:    1
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK -- with warnings
+
+24-Jan 08:50 bacula-dir JobId 16: Begin pruning Jobs older than 6 months .
+24-Jan 08:50 bacula-dir JobId 16: No Jobs found to prune.
+24-Jan 08:50 bacula-dir JobId 16: Begin pruning Files.
+24-Jan 08:50 bacula-dir JobId 16: No Files found to prune.
+24-Jan 08:50 bacula-dir JobId 16: End auto prune.
+
+24-Jan 08:50 bacula-dir JobId 17: Start Backup JobId 17, Job=BackupClient2.2020-01-24_08.50.32_03
+24-Jan 08:50 bacula-dir JobId 17: Using Device "FileStorage" to write.
+24-Jan 08:50 bacula-sd JobId 17: Volume "v1" previously written, moving to end of data.
+24-Jan 08:50 bacula-sd JobId 17: Ready to append to end of Volume "v1" size=180487
+24-Jan 08:50 client2-fd JobId 17:      Could not stat "/var/lib/eventstore/": ERR=No such file or directory
+24-Jan 08:50 bacula-sd JobId 17: Elapsed time=00:00:01, Transfer rate=0  Bytes/second
+24-Jan 08:50 bacula-dir JobId 17: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  17
+  Job:                    BackupClient2.2020-01-24_08.50.32_03
+  Backup Level:           Incremental, since=2020-01-24 08:50:05
+  Client:                 "client2-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 08:06:37
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 08:50:32
+  Start time:             24-Jan-2020 08:50:37
+  End time:               24-Jan-2020 08:50:37
+  Elapsed time:           0 secs
+  Priority:               10
+  FD Files Written:       0
+  SD Files Written:       0
+  FD Bytes Written:       0 (0 B)
+  SD Bytes Written:       0 (0 B)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         
+  Volume Session Id:      17
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      180,893 (180.8 KB)
+  Non-fatal FD errors:    1
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK -- with warnings
+
+24-Jan 08:50 bacula-dir JobId 17: Begin pruning Jobs older than 6 months .
+24-Jan 08:50 bacula-dir JobId 17: No Jobs found to prune.
+24-Jan 08:50 bacula-dir JobId 17: Begin pruning Files.
+24-Jan 08:50 bacula-dir JobId 17: No Files found to prune.
+24-Jan 08:50 bacula-dir JobId 17: End auto prune.
+
+24-Jan 08:52 bacula-dir JobId 18: Start Backup JobId 18, Job=BackupClient1.2020-01-24_08.52.00_05
+24-Jan 08:52 bacula-dir JobId 18: Using Device "FileStorage" to write.
+24-Jan 08:52 bacula-sd JobId 18: Volume "v1" previously written, moving to end of data.
+24-Jan 08:52 bacula-sd JobId 18: Ready to append to end of Volume "v1" size=180893
+24-Jan 08:52 client1-fd JobId 18:      Could not stat "/var/lib/eventstore/": ERR=No such file or directory
+24-Jan 08:52 bacula-sd JobId 18: Elapsed time=00:00:01, Transfer rate=0  Bytes/second
+24-Jan 08:52 bacula-dir JobId 18: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  18
+  Job:                    BackupClient1.2020-01-24_08.52.00_05
+  Backup Level:           Full
+  Client:                 "client1-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 08:06:37
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 08:52:00
+  Start time:             24-Jan-2020 08:52:02
+  End time:               24-Jan-2020 08:52:03
+  Elapsed time:           1 sec
+  Priority:               10
+  FD Files Written:       0
+  SD Files Written:       0
+  FD Bytes Written:       0 (0 B)
+  SD Bytes Written:       0 (0 B)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         
+  Volume Session Id:      18
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      181,299 (181.2 KB)
+  Non-fatal FD errors:    1
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK -- with warnings
+
+24-Jan 08:52 bacula-dir JobId 18: Begin pruning Jobs older than 6 months .
+24-Jan 08:52 bacula-dir JobId 18: No Jobs found to prune.
+24-Jan 08:52 bacula-dir JobId 18: Begin pruning Files.
+24-Jan 08:52 bacula-dir JobId 18: No Files found to prune.
+24-Jan 08:52 bacula-dir JobId 18: End auto prune.
+
+24-Jan 08:52 bacula-dir JobId 19: Start Backup JobId 19, Job=BackupClient2.2020-01-24_08.52.00_06
+24-Jan 08:52 bacula-dir JobId 19: Using Device "FileStorage" to write.
+24-Jan 08:52 bacula-sd JobId 19: Volume "v1" previously written, moving to end of data.
+24-Jan 08:52 bacula-sd JobId 19: Ready to append to end of Volume "v1" size=181299
+24-Jan 08:52 client2-fd JobId 19:      Could not stat "/var/lib/eventstore/": ERR=No such file or directory
+24-Jan 08:52 bacula-sd JobId 19: Elapsed time=00:00:01, Transfer rate=0  Bytes/second
+24-Jan 08:52 bacula-dir JobId 19: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  19
+  Job:                    BackupClient2.2020-01-24_08.52.00_06
+  Backup Level:           Full
+  Client:                 "client2-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 08:06:37
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 08:52:00
+  Start time:             24-Jan-2020 08:52:05
+  End time:               24-Jan-2020 08:52:05
+  Elapsed time:           0 secs
+  Priority:               10
+  FD Files Written:       0
+  SD Files Written:       0
+  FD Bytes Written:       0 (0 B)
+  SD Bytes Written:       0 (0 B)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         
+  Volume Session Id:      19
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      181,705 (181.7 KB)
+  Non-fatal FD errors:    1
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK -- with warnings
+
+24-Jan 08:52 bacula-dir JobId 19: Begin pruning Jobs older than 6 months .
+24-Jan 08:52 bacula-dir JobId 19: No Jobs found to prune.
+24-Jan 08:52 bacula-dir JobId 19: Begin pruning Files.
+24-Jan 08:52 bacula-dir JobId 19: No Files found to prune.
+24-Jan 08:52 bacula-dir JobId 19: End auto prune.
+
+24-Jan 09:00 bacula-dir JobId 20: Start Backup JobId 20, Job=BackupClient1.2020-01-24_09.00.00_03
+24-Jan 09:00 bacula-dir JobId 20: Using Device "FileStorage" to write.
+24-Jan 09:00 bacula-sd JobId 20: Volume "v1" previously written, moving to end of data.
+24-Jan 09:00 bacula-sd JobId 20: Ready to append to end of Volume "v1" size=181705
+24-Jan 09:00 client1-fd JobId 20:      Could not stat "/var/lib/eventstore/": ERR=No such file or directory
+24-Jan 09:00 bacula-sd JobId 20: Elapsed time=00:00:01, Transfer rate=0  Bytes/second
+24-Jan 09:00 bacula-dir JobId 20: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  20
+  Job:                    BackupClient1.2020-01-24_09.00.00_03
+  Backup Level:           Full
+  Client:                 "client1-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 08:06:37
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 09:00:00
+  Start time:             24-Jan-2020 09:00:02
+  End time:               24-Jan-2020 09:00:03
+  Elapsed time:           1 sec
+  Priority:               10
+  FD Files Written:       0
+  SD Files Written:       0
+  FD Bytes Written:       0 (0 B)
+  SD Bytes Written:       0 (0 B)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         
+  Volume Session Id:      20
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      182,111 (182.1 KB)
+  Non-fatal FD errors:    1
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK -- with warnings
+
+24-Jan 09:00 bacula-dir JobId 20: Begin pruning Jobs older than 6 months .
+24-Jan 09:00 bacula-dir JobId 20: No Jobs found to prune.
+24-Jan 09:00 bacula-dir JobId 20: Begin pruning Files.
+24-Jan 09:00 bacula-dir JobId 20: No Files found to prune.
+24-Jan 09:00 bacula-dir JobId 20: End auto prune.
+
+24-Jan 09:00 bacula-dir JobId 21: Start Backup JobId 21, Job=BackupClient2.2020-01-24_09.00.00_04
+24-Jan 09:00 bacula-dir JobId 21: Using Device "FileStorage" to write.
+24-Jan 09:00 bacula-sd JobId 21: Volume "v1" previously written, moving to end of data.
+24-Jan 09:00 bacula-sd JobId 21: Ready to append to end of Volume "v1" size=182111
+24-Jan 09:00 client2-fd JobId 21:      Could not stat "/var/lib/eventstore/": ERR=No such file or directory
+24-Jan 09:00 bacula-sd JobId 21: Elapsed time=00:00:01, Transfer rate=0  Bytes/second
+24-Jan 09:00 bacula-dir JobId 21: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  21
+  Job:                    BackupClient2.2020-01-24_09.00.00_04
+  Backup Level:           Full
+  Client:                 "client2-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 08:06:37
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 09:00:00
+  Start time:             24-Jan-2020 09:00:05
+  End time:               24-Jan-2020 09:00:05
+  Elapsed time:           0 secs
+  Priority:               10
+  FD Files Written:       0
+  SD Files Written:       0
+  FD Bytes Written:       0 (0 B)
+  SD Bytes Written:       0 (0 B)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         
+  Volume Session Id:      21
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      182,517 (182.5 KB)
+  Non-fatal FD errors:    1
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK -- with warnings
+
+24-Jan 09:00 bacula-dir JobId 21: Begin pruning Jobs older than 6 months .
+24-Jan 09:00 bacula-dir JobId 21: No Jobs found to prune.
+24-Jan 09:00 bacula-dir JobId 21: Begin pruning Files.
+24-Jan 09:00 bacula-dir JobId 21: No Files found to prune.
+24-Jan 09:00 bacula-dir JobId 21: End auto prune.
+
+24-Jan 09:01 bacula-dir JobId 22: shell command: run BeforeJob "/usr/libexec/bacula/make_catalog_backup.pl MyCatalog"
+24-Jan 09:01 bacula-dir JobId 22: Start Backup JobId 22, Job=BackupCatalog.2020-01-24_09.01.00_05
+24-Jan 09:01 bacula-dir JobId 22: Using Device "FileStorage" to write.
+24-Jan 09:01 bacula-sd JobId 22: Volume "v1" previously written, moving to end of data.
+24-Jan 09:01 bacula-sd JobId 22: Ready to append to end of Volume "v1" size=182517
+24-Jan 09:01 bacula-sd JobId 22: Elapsed time=00:00:05, Transfer rate=6.356 M Bytes/second
+24-Jan 09:01 bacula-dir JobId 22: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  22
+  Job:                    BackupCatalog.2020-01-24_09.01.00_05
+  Backup Level:           Full
+  Client:                 "server-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Catalog" 2020-01-24 09:01:00
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 09:01:00
+  Start time:             24-Jan-2020 09:01:03
+  End time:               24-Jan-2020 09:01:08
+  Elapsed time:           5 secs
+  Priority:               11
+  FD Files Written:       2,455
+  SD Files Written:       2,455
+  FD Bytes Written:       31,476,052 (31.47 MB)
+  SD Bytes Written:       31,781,849 (31.78 MB)
+  Rate:                   6295.2 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         v1
+  Volume Session Id:      22
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      32,057,800 (32.05 MB)
+  Non-fatal FD errors:    0
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK
+
+24-Jan 09:01 bacula-dir JobId 22: Begin pruning Jobs older than 6 months .
+24-Jan 09:01 bacula-dir JobId 22: No Jobs found to prune.
+24-Jan 09:01 bacula-dir JobId 22: Begin pruning Files.
+24-Jan 09:01 bacula-dir JobId 22: No Files found to prune.
+24-Jan 09:01 bacula-dir JobId 22: End auto prune.
+
+24-Jan 09:01 bacula-dir JobId 22: shell command: run AfterJob "/usr/libexec/bacula/delete_catalog_backup"
+24-Jan 09:05 bacula-dir JobId 23: No prior Full backup Job record found.
+24-Jan 09:05 bacula-dir JobId 23: No prior or suitable Full backup found in catalog. Doing FULL backup.
+24-Jan 09:05 bacula-dir JobId 23: Start Backup JobId 23, Job=BackupClient1.2020-01-24_09.05.00_03
+24-Jan 09:05 bacula-dir JobId 23: Using Device "FileStorage" to write.
+24-Jan 09:05 bacula-sd JobId 23: Volume "v1" previously written, moving to end of data.
+24-Jan 09:05 bacula-sd JobId 23: Ready to append to end of Volume "v1" size=32057800
+24-Jan 09:05 client1-fd JobId 23:      /var/lib/nfs/rpc_pipefs is a different filesystem. Will not descend from /var/ into it.
+24-Jan 09:05 bacula-sd JobId 23: Elapsed time=00:00:31, Transfer rate=24.97 M Bytes/second
+24-Jan 09:05 bacula-dir JobId 23: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  23
+  Job:                    BackupClient1.2020-01-24_09.05.00_03
+  Backup Level:           Full (upgraded from Differential)
+  Client:                 "client1-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 09:05:00
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 09:05:00
+  Start time:             24-Jan-2020 09:05:02
+  End time:               24-Jan-2020 09:05:33
+  Elapsed time:           31 secs
+  Priority:               10
+  FD Files Written:       5,304
+  SD Files Written:       5,304
+  FD Bytes Written:       772,833,756 (772.8 MB)
+  SD Bytes Written:       774,094,699 (774.0 MB)
+  Rate:                   24930.1 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         v1
+  Volume Session Id:      23
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      806,866,221 (806.8 MB)
+  Non-fatal FD errors:    0
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK
+
+24-Jan 09:05 bacula-dir JobId 23: Begin pruning Jobs older than 6 months .
+24-Jan 09:05 bacula-dir JobId 23: No Jobs found to prune.
+24-Jan 09:05 bacula-dir JobId 23: Begin pruning Files.
+24-Jan 09:05 bacula-dir JobId 23: No Files found to prune.
+24-Jan 09:05 bacula-dir JobId 23: End auto prune.
+
+24-Jan 09:05 bacula-dir JobId 24: No prior Full backup Job record found.
+24-Jan 09:05 bacula-dir JobId 24: No prior or suitable Full backup found in catalog. Doing FULL backup.
+24-Jan 09:05 bacula-dir JobId 24: Start Backup JobId 24, Job=BackupClient2.2020-01-24_09.05.00_04
+24-Jan 09:05 bacula-dir JobId 24: Using Device "FileStorage" to write.
+24-Jan 09:05 bacula-sd JobId 24: Volume "v1" previously written, moving to end of data.
+24-Jan 09:05 bacula-sd JobId 24: Ready to append to end of Volume "v1" size=806866221
+24-Jan 09:05 client2-fd JobId 24:      /var/lib/nfs/rpc_pipefs is a different filesystem. Will not descend from /var/ into it.
+24-Jan 09:06 bacula-sd JobId 24: Elapsed time=00:00:32, Transfer rate=24.19 M Bytes/second
+24-Jan 09:06 bacula-dir JobId 24: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  24
+  Job:                    BackupClient2.2020-01-24_09.05.00_04
+  Backup Level:           Full (upgraded from Differential)
+  Client:                 "client2-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 09:05:00
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 09:05:00
+  Start time:             24-Jan-2020 09:05:35
+  End time:               24-Jan-2020 09:06:07
+  Elapsed time:           32 secs
+  Priority:               10
+  FD Files Written:       5,304
+  SD Files Written:       5,304
+  FD Bytes Written:       772,830,371 (772.8 MB)
+  SD Bytes Written:       774,091,311 (774.0 MB)
+  Rate:                   24150.9 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         v1
+  Volume Session Id:      24
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      1,581,671,278 (1.581 GB)
+  Non-fatal FD errors:    0
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK
+
+24-Jan 09:06 bacula-dir JobId 24: Begin pruning Jobs older than 6 months .
+24-Jan 09:06 bacula-dir JobId 24: No Jobs found to prune.
+24-Jan 09:06 bacula-dir JobId 24: Begin pruning Files.
+24-Jan 09:06 bacula-dir JobId 24: No Files found to prune.
+24-Jan 09:06 bacula-dir JobId 24: End auto prune.
+
+24-Jan 09:10 bacula-dir JobId 25: Start Backup JobId 25, Job=BackupClient1.2020-01-24_09.10.00_05
+24-Jan 09:10 bacula-dir JobId 25: Using Device "FileStorage" to write.
+24-Jan 09:10 bacula-sd JobId 25: Volume "v1" previously written, moving to end of data.
+24-Jan 09:10 bacula-sd JobId 25: Ready to append to end of Volume "v1" size=1581671278
+24-Jan 09:10 client1-fd JobId 25:      /var/lib/nfs/rpc_pipefs is a different filesystem. Will not descend from /var/ into it.
+24-Jan 09:10 bacula-sd JobId 25: Elapsed time=00:00:01, Transfer rate=2.485 K Bytes/second
+24-Jan 09:10 bacula-dir JobId 25: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  25
+  Job:                    BackupClient1.2020-01-24_09.10.00_05
+  Backup Level:           Incremental, since=2020-01-24 09:05:02
+  Client:                 "client1-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 09:05:00
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 09:10:00
+  Start time:             24-Jan-2020 09:10:02
+  End time:               24-Jan-2020 09:10:03
+  Elapsed time:           1 sec
+  Priority:               10
+  FD Files Written:       3
+  SD Files Written:       3
+  FD Bytes Written:       2,196 (2.196 KB)
+  SD Bytes Written:       2,485 (2.485 KB)
+  Rate:                   2.2 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         v1
+  Volume Session Id:      25
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      1,581,674,229 (1.581 GB)
+  Non-fatal FD errors:    0
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK
+
+24-Jan 09:10 bacula-dir JobId 25: Begin pruning Jobs older than 6 months .
+24-Jan 09:10 bacula-dir JobId 25: No Jobs found to prune.
+24-Jan 09:10 bacula-dir JobId 25: Begin pruning Files.
+24-Jan 09:10 bacula-dir JobId 25: No Files found to prune.
+24-Jan 09:10 bacula-dir JobId 25: End auto prune.
+
+24-Jan 09:10 bacula-dir JobId 26: Start Backup JobId 26, Job=BackupClient2.2020-01-24_09.10.00_06
+24-Jan 09:10 bacula-dir JobId 26: Using Device "FileStorage" to write.
+24-Jan 09:10 bacula-sd JobId 26: Volume "v1" previously written, moving to end of data.
+24-Jan 09:10 bacula-sd JobId 26: Ready to append to end of Volume "v1" size=1581674229
+24-Jan 09:10 client2-fd JobId 26:      /var/lib/nfs/rpc_pipefs is a different filesystem. Will not descend from /var/ into it.
+24-Jan 09:10 bacula-sd JobId 26: Elapsed time=00:00:01, Transfer rate=2.485 K Bytes/second
+24-Jan 09:10 bacula-dir JobId 26: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  26
+  Job:                    BackupClient2.2020-01-24_09.10.00_06
+  Backup Level:           Incremental, since=2020-01-24 09:05:35
+  Client:                 "client2-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 09:05:00
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 09:10:00
+  Start time:             24-Jan-2020 09:10:05
+  End time:               24-Jan-2020 09:10:05
+  Elapsed time:           0 secs
+  Priority:               10
+  FD Files Written:       3
+  SD Files Written:       3
+  FD Bytes Written:       2,196 (2.196 KB)
+  SD Bytes Written:       2,485 (2.485 KB)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         v1
+  Volume Session Id:      26
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      1,581,677,180 (1.581 GB)
+  Non-fatal FD errors:    0
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK
+
+24-Jan 09:10 bacula-dir JobId 26: Begin pruning Jobs older than 6 months .
+24-Jan 09:10 bacula-dir JobId 26: No Jobs found to prune.
+24-Jan 09:10 bacula-dir JobId 26: Begin pruning Files.
+24-Jan 09:10 bacula-dir JobId 26: No Files found to prune.
+24-Jan 09:10 bacula-dir JobId 26: End auto prune.
+
+24-Jan 09:20 bacula-dir JobId 27: Start Backup JobId 27, Job=BackupClient1.2020-01-24_09.20.00_07
+24-Jan 09:20 bacula-dir JobId 27: Using Device "FileStorage" to write.
+24-Jan 09:20 bacula-sd JobId 27: Volume "v1" previously written, moving to end of data.
+24-Jan 09:20 bacula-sd JobId 27: Ready to append to end of Volume "v1" size=1581677180
+24-Jan 09:20 client1-fd JobId 27:      /var/lib/nfs/rpc_pipefs is a different filesystem. Will not descend from /var/ into it.
+24-Jan 09:20 bacula-sd JobId 27: Elapsed time=00:00:01, Transfer rate=155.0 K Bytes/second
+24-Jan 09:20 bacula-dir JobId 27: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  27
+  Job:                    BackupClient1.2020-01-24_09.20.00_07
+  Backup Level:           Incremental, since=2020-01-24 09:10:02
+  Client:                 "client1-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 09:05:00
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 09:20:00
+  Start time:             24-Jan-2020 09:20:02
+  End time:               24-Jan-2020 09:20:03
+  Elapsed time:           1 sec
+  Priority:               10
+  FD Files Written:       8
+  SD Files Written:       8
+  FD Bytes Written:       154,247 (154.2 KB)
+  SD Bytes Written:       155,040 (155.0 KB)
+  Rate:                   154.2 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         v1
+  Volume Session Id:      27
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      1,581,832,938 (1.581 GB)
+  Non-fatal FD errors:    0
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK
+
+24-Jan 09:20 bacula-dir JobId 27: Begin pruning Jobs older than 6 months .
+24-Jan 09:20 bacula-dir JobId 27: No Jobs found to prune.
+24-Jan 09:20 bacula-dir JobId 27: Begin pruning Files.
+24-Jan 09:20 bacula-dir JobId 27: No Files found to prune.
+24-Jan 09:20 bacula-dir JobId 27: End auto prune.
+
+24-Jan 09:20 bacula-dir JobId 28: Start Backup JobId 28, Job=BackupClient2.2020-01-24_09.20.00_08
+24-Jan 09:20 bacula-dir JobId 28: Using Device "FileStorage" to write.
+24-Jan 09:20 bacula-sd JobId 28: Volume "v1" previously written, moving to end of data.
+24-Jan 09:20 bacula-sd JobId 28: Ready to append to end of Volume "v1" size=1581832938
+24-Jan 09:20 client2-fd JobId 28:      /var/lib/nfs/rpc_pipefs is a different filesystem. Will not descend from /var/ into it.
+24-Jan 09:20 bacula-sd JobId 28: Elapsed time=00:00:01, Transfer rate=2.485 K Bytes/second
+24-Jan 09:20 bacula-dir JobId 28: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  28
+  Job:                    BackupClient2.2020-01-24_09.20.00_08
+  Backup Level:           Incremental, since=2020-01-24 09:10:05
+  Client:                 "client2-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 09:05:00
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 09:20:00
+  Start time:             24-Jan-2020 09:20:05
+  End time:               24-Jan-2020 09:20:05
+  Elapsed time:           0 secs
+  Priority:               10
+  FD Files Written:       3
+  SD Files Written:       3
+  FD Bytes Written:       2,196 (2.196 KB)
+  SD Bytes Written:       2,485 (2.485 KB)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         v1
+  Volume Session Id:      28
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      1,581,835,889 (1.581 GB)
+  Non-fatal FD errors:    0
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK
+
+24-Jan 09:20 bacula-dir JobId 28: Begin pruning Jobs older than 6 months .
+24-Jan 09:20 bacula-dir JobId 28: No Jobs found to prune.
+24-Jan 09:20 bacula-dir JobId 28: Begin pruning Files.
+24-Jan 09:20 bacula-dir JobId 28: No Files found to prune.
+24-Jan 09:20 bacula-dir JobId 28: End auto prune.
+
+24-Jan 09:30 bacula-dir JobId 29: Start Backup JobId 29, Job=BackupClient1.2020-01-24_09.30.00_10
+24-Jan 09:30 bacula-dir JobId 29: Using Device "FileStorage" to write.
+24-Jan 09:30 bacula-sd JobId 29: Volume "v1" previously written, moving to end of data.
+24-Jan 09:30 bacula-sd JobId 29: Ready to append to end of Volume "v1" size=1581835889
+24-Jan 09:30 client1-fd JobId 29:      /var/lib/nfs/rpc_pipefs is a different filesystem. Will not descend from /var/ into it.
+24-Jan 09:30 bacula-sd JobId 29: Elapsed time=00:00:01, Transfer rate=151.5 K Bytes/second
+24-Jan 09:30 bacula-dir JobId 29: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  29
+  Job:                    BackupClient1.2020-01-24_09.30.00_10
+  Backup Level:           Incremental, since=2020-01-24 09:20:02
+  Client:                 "client1-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 09:05:00
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 09:30:00
+  Start time:             24-Jan-2020 09:30:02
+  End time:               24-Jan-2020 09:30:03
+  Elapsed time:           1 sec
+  Priority:               10
+  FD Files Written:       4
+  SD Files Written:       4
+  FD Bytes Written:       151,174 (151.1 KB)
+  SD Bytes Written:       151,564 (151.5 KB)
+  Rate:                   151.2 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         v1
+  Volume Session Id:      29
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      1,581,988,051 (1.581 GB)
+  Non-fatal FD errors:    0
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK
+
+24-Jan 09:30 bacula-dir JobId 29: Begin pruning Jobs older than 6 months .
+24-Jan 09:30 bacula-dir JobId 29: No Jobs found to prune.
+24-Jan 09:30 bacula-dir JobId 29: Begin pruning Files.
+24-Jan 09:30 bacula-dir JobId 29: No Files found to prune.
+24-Jan 09:30 bacula-dir JobId 29: End auto prune.
+
+24-Jan 09:30 bacula-dir JobId 30: Start Backup JobId 30, Job=BackupClient2.2020-01-24_09.30.00_11
+24-Jan 09:30 bacula-dir JobId 30: Using Device "FileStorage" to write.
+24-Jan 09:30 bacula-sd JobId 30: Volume "v1" previously written, moving to end of data.
+24-Jan 09:30 bacula-sd JobId 30: Ready to append to end of Volume "v1" size=1581988051
+24-Jan 09:30 client2-fd JobId 30:      /var/lib/nfs/rpc_pipefs is a different filesystem. Will not descend from /var/ into it.
+24-Jan 09:30 bacula-sd JobId 30: Elapsed time=00:00:01, Transfer rate=146.9 K Bytes/second
+24-Jan 09:30 bacula-dir JobId 30: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  30
+  Job:                    BackupClient2.2020-01-24_09.30.00_11
+  Backup Level:           Incremental, since=2020-01-24 09:20:05
+  Client:                 "client2-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 09:05:00
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 09:30:00
+  Start time:             24-Jan-2020 09:30:05
+  End time:               24-Jan-2020 09:30:05
+  Elapsed time:           0 secs
+  Priority:               10
+  FD Files Written:       6
+  SD Files Written:       6
+  FD Bytes Written:       146,340 (146.3 KB)
+  SD Bytes Written:       146,926 (146.9 KB)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         v1
+  Volume Session Id:      30
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      1,582,135,623 (1.582 GB)
+  Non-fatal FD errors:    0
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK
+
+24-Jan 09:30 bacula-dir JobId 30: Begin pruning Jobs older than 6 months .
+24-Jan 09:30 bacula-dir JobId 30: No Jobs found to prune.
+24-Jan 09:30 bacula-dir JobId 30: Begin pruning Files.
+24-Jan 09:30 bacula-dir JobId 30: No Files found to prune.
+24-Jan 09:30 bacula-dir JobId 30: End auto prune.
+
+24-Jan 09:35 bacula-dir JobId 31: Start Backup JobId 31, Job=BackupClient1.2020-01-24_09.35.00_12
+24-Jan 09:35 bacula-dir JobId 31: Using Device "FileStorage" to write.
+24-Jan 09:35 bacula-sd JobId 31: Volume "v1" previously written, moving to end of data.
+24-Jan 09:35 bacula-sd JobId 31: Ready to append to end of Volume "v1" size=1582135623
+24-Jan 09:35 client1-fd JobId 31:      /var/lib/nfs/rpc_pipefs is a different filesystem. Will not descend from /var/ into it.
+24-Jan 09:35 bacula-sd JobId 31: Elapsed time=00:00:01, Transfer rate=155.1 K Bytes/second
+24-Jan 09:35 bacula-dir JobId 31: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  31
+  Job:                    BackupClient1.2020-01-24_09.35.00_12
+  Backup Level:           Differential, since=2020-01-24 09:05:02
+  Client:                 "client1-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 09:05:00
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 09:35:00
+  Start time:             24-Jan-2020 09:35:02
+  End time:               24-Jan-2020 09:35:03
+  Elapsed time:           1 sec
+  Priority:               10
+  FD Files Written:       8
+  SD Files Written:       8
+  FD Bytes Written:       154,324 (154.3 KB)
+  SD Bytes Written:       155,117 (155.1 KB)
+  Rate:                   154.3 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         v1
+  Volume Session Id:      31
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      1,582,291,458 (1.582 GB)
+  Non-fatal FD errors:    0
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK
+
+24-Jan 09:35 bacula-dir JobId 31: Begin pruning Jobs older than 6 months .
+24-Jan 09:35 bacula-dir JobId 31: No Jobs found to prune.
+24-Jan 09:35 bacula-dir JobId 31: Begin pruning Files.
+24-Jan 09:35 bacula-dir JobId 31: No Files found to prune.
+24-Jan 09:35 bacula-dir JobId 31: End auto prune.
+
+24-Jan 09:35 bacula-dir JobId 32: Start Backup JobId 32, Job=BackupClient2.2020-01-24_09.35.00_13
+24-Jan 09:35 bacula-dir JobId 32: Using Device "FileStorage" to write.
+24-Jan 09:35 bacula-sd JobId 32: Volume "v1" previously written, moving to end of data.
+24-Jan 09:35 bacula-sd JobId 32: Ready to append to end of Volume "v1" size=1582291458
+24-Jan 09:35 client2-fd JobId 32:      /var/lib/nfs/rpc_pipefs is a different filesystem. Will not descend from /var/ into it.
+24-Jan 09:35 bacula-sd JobId 32: Elapsed time=00:00:01, Transfer rate=146.9 K Bytes/second
+24-Jan 09:35 bacula-dir JobId 32: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  32
+  Job:                    BackupClient2.2020-01-24_09.35.00_13
+  Backup Level:           Differential, since=2020-01-24 09:05:35
+  Client:                 "client2-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 09:05:00
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 09:35:00
+  Start time:             24-Jan-2020 09:35:05
+  End time:               24-Jan-2020 09:35:05
+  Elapsed time:           0 secs
+  Priority:               10
+  FD Files Written:       6
+  SD Files Written:       6
+  FD Bytes Written:       146,340 (146.3 KB)
+  SD Bytes Written:       146,926 (146.9 KB)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         v1
+  Volume Session Id:      32
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      1,582,439,030 (1.582 GB)
+  Non-fatal FD errors:    0
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK
+
+24-Jan 09:35 bacula-dir JobId 32: Begin pruning Jobs older than 6 months .
+24-Jan 09:35 bacula-dir JobId 32: No Jobs found to prune.
+24-Jan 09:35 bacula-dir JobId 32: Begin pruning Files.
+24-Jan 09:35 bacula-dir JobId 32: No Files found to prune.
+24-Jan 09:35 bacula-dir JobId 32: End auto prune.
+
+24-Jan 09:40 bacula-dir JobId 33: Start Backup JobId 33, Job=BackupClient1.2020-01-24_09.40.00_14
+24-Jan 09:40 bacula-dir JobId 33: Using Device "FileStorage" to write.
+24-Jan 09:40 bacula-sd JobId 33: Volume "v1" previously written, moving to end of data.
+24-Jan 09:40 bacula-sd JobId 33: Ready to append to end of Volume "v1" size=1582439030
+24-Jan 09:40 client1-fd JobId 33:      /var/lib/nfs/rpc_pipefs is a different filesystem. Will not descend from /var/ into it.
+24-Jan 09:40 bacula-sd JobId 33: Elapsed time=00:00:01, Transfer rate=2.485 K Bytes/second
+24-Jan 09:40 bacula-dir JobId 33: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  33
+  Job:                    BackupClient1.2020-01-24_09.40.00_14
+  Backup Level:           Incremental, since=2020-01-24 09:35:02
+  Client:                 "client1-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 09:05:00
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 09:40:00
+  Start time:             24-Jan-2020 09:40:03
+  End time:               24-Jan-2020 09:40:03
+  Elapsed time:           0 secs
+  Priority:               10
+  FD Files Written:       3
+  SD Files Written:       3
+  FD Bytes Written:       2,196 (2.196 KB)
+  SD Bytes Written:       2,485 (2.485 KB)
+  Rate:                   0.0 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         v1
+  Volume Session Id:      33
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      1,582,441,981 (1.582 GB)
+  Non-fatal FD errors:    0
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK
+
+24-Jan 09:40 bacula-dir JobId 33: Begin pruning Jobs older than 6 months .
+24-Jan 09:40 bacula-dir JobId 33: No Jobs found to prune.
+24-Jan 09:40 bacula-dir JobId 33: Begin pruning Files.
+24-Jan 09:40 bacula-dir JobId 33: No Files found to prune.
+24-Jan 09:40 bacula-dir JobId 33: End auto prune.
+
+24-Jan 09:40 bacula-dir JobId 34: Start Backup JobId 34, Job=BackupClient2.2020-01-24_09.40.00_15
+24-Jan 09:40 bacula-dir JobId 34: Using Device "FileStorage" to write.
+24-Jan 09:40 bacula-sd JobId 34: Volume "v1" previously written, moving to end of data.
+24-Jan 09:40 bacula-sd JobId 34: Ready to append to end of Volume "v1" size=1582441981
+24-Jan 09:40 client2-fd JobId 34:      /var/lib/nfs/rpc_pipefs is a different filesystem. Will not descend from /var/ into it.
+24-Jan 09:40 bacula-sd JobId 34: Elapsed time=00:00:01, Transfer rate=146.6 K Bytes/second
+24-Jan 09:40 bacula-dir JobId 34: Bacula bacula-dir 5.2.13 (19Jan13):
+  Build OS:               x86_64-redhat-linux-gnu redhat (Core)
+  JobId:                  34
+  Job:                    BackupClient2.2020-01-24_09.40.00_15
+  Backup Level:           Incremental, since=2020-01-24 09:35:05
+  Client:                 "client2-fd" 5.2.13 (19Jan13) x86_64-redhat-linux-gnu,redhat,(Core)
+  FileSet:                "Eventstore" 2020-01-24 09:05:00
+  Pool:                   "File" (From Job resource)
+  Catalog:                "MyCatalog" (From Client resource)
+  Storage:                "File" (From Job resource)
+  Scheduled time:         24-Jan-2020 09:40:00
+  Start time:             24-Jan-2020 09:40:05
+  End time:               24-Jan-2020 09:40:06
+  Elapsed time:           1 sec
+  Priority:               10
+  FD Files Written:       4
+  SD Files Written:       4
+  FD Bytes Written:       146,296 (146.2 KB)
+  SD Bytes Written:       146,686 (146.6 KB)
+  Rate:                   146.3 KB/s
+  Software Compression:   None
+  VSS:                    no
+  Encryption:             no
+  Accurate:               no
+  Volume name(s):         v1
+  Volume Session Id:      34
+  Volume Session Time:    1579851156
+  Last Volume Bytes:      1,582,589,265 (1.582 GB)
+  Non-fatal FD errors:    0
+  SD Errors:              0
+  FD termination status:  OK
+  SD termination status:  OK
+  Termination:            Backup OK
+
+24-Jan 09:40 bacula-dir JobId 34: Begin pruning Jobs older than 6 months .
+24-Jan 09:40 bacula-dir JobId 34: No Jobs found to prune.
+24-Jan 09:40 bacula-dir JobId 34: Begin pruning Files.
+24-Jan 09:40 bacula-dir JobId 34: No Files found to prune.
+24-Jan 09:40 bacula-dir JobId 34: End auto prune.
+
