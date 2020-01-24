@@ -1,0 +1,43 @@
+| /var/lib/yum/yumdb/f/cb7e013b0931dc495c9295d40ffbd0f49e31484b-fipscheck-lib-1.4.1-6.el7-x86_64/from_repo_timestamp |
+| /var/lib/yum/yumdb/f/cb7e013b0931dc495c9295d40ffbd0f49e31484b-fipscheck-lib-1.4.1-6.el7-x86_64/from_repo_revision |
+| /var/lib/yum/yumdb/f/cb7e013b0931dc495c9295d40ffbd0f49e31484b-fipscheck-lib-1.4.1-6.el7-x86_64/checksum_data |
+| /var/lib/yum/yumdb/f/cb7e013b0931dc495c9295d40ffbd0f49e31484b-fipscheck-lib-1.4.1-6.el7-x86_64/checksum_type |
+| /var/lib/yum/yumdb/f/cb7e013b0931dc495c9295d40ffbd0f49e31484b-fipscheck-lib-1.4.1-6.el7-x86_64/ts_install_langs |
+| /var/lib/yum/yumdb/f/cb7e013b0931dc495c9295d40ffbd0f49e31484b-fipscheck-lib-1.4.1-6.el7-x86_64/var_uuid |
+| /var/lib/yum/yumdb/f/cb7e013b0931dc495c9295d40ffbd0f49e31484b-fipscheck-lib-1.4.1-6.el7-x86_64/releasever |
+| /var/lib/yum/yumdb/f/cb7e013b0931dc495c9295d40ffbd0f49e31484b-fipscheck-lib-1.4.1-6.el7-x86_64/reason |
+| /var/lib/yum/yumdb/f/cb7e013b0931dc495c9295d40ffbd0f49e31484b-fipscheck-lib-1.4.1-6.el7-x86_64/from_repo |
+| /var/lib/yum/repos/                    |
+| /var/lib/yum/repos/x86_64/             |
+| /var/lib/yum/repos/x86_64/7/           |
+| /var/lib/yum/repos/x86_64/7/C7.6.1810-updates/ |
+| /var/lib/yum/repos/x86_64/7/C7.6.1810-base/ |
+| /var/lib/yum/repos/x86_64/7/C7.5.1804-updates/ |
+| /var/lib/yum/repos/x86_64/7/C7.5.1804-base/ |
+| /var/lib/yum/repos/x86_64/7/C7.4.1708-updates/ |
+| /var/lib/yum/repos/x86_64/7/C7.4.1708-base/ |
+| /var/lib/yum/repos/x86_64/7/C7.3.1611-updates/ |
+| /var/lib/yum/repos/x86_64/7/C7.3.1611-base/ |
+| /var/lib/yum/repos/x86_64/7/C7.2.1511-updates/ |
+| /var/lib/yum/repos/x86_64/7/C7.2.1511-base/ |
+| /var/lib/yum/repos/x86_64/7/C7.1.1503-updates/ |
+| /var/lib/yum/repos/x86_64/7/C7.1.1503-base/ |
+| /var/lib/yum/repos/x86_64/7/C7.0.1406-updates/ |
+| /var/lib/yum/repos/x86_64/7/C7.0.1406-base/ |
+| /var/lib/yum/repos/x86_64/7/updates/   |
+| /var/lib/yum/repos/x86_64/7/extras/    |
+| /var/lib/yum/repos/x86_64/7/base/      |
+| /var/lib/yum/repos/x86_64/7/anaconda/  |
+| /var/lib/yum/repos/x86_64/7/koji-override-1/ |
+| /var/lib/yum/repos/x86_64/7/koji-override-0/ |
+| /var/tmp/                              |
+| /var/tmp/systemd-private-36ad1595497c478ea0583fa05ac5d8cd-chronyd.service-FFHvtn/ |
+| /var/tmp/systemd-private-36ad1595497c478ea0583fa05ac5d8cd-chronyd.service-FFHvtn/tmp/ |
+| /var/tmp/yum-vagrant-uYsikd/           |
++----------------------------------------+
++-------+---------------+---------------------+------+-------+----------+-------------+-----------+
+| jobid | name          | starttime           | type | level | jobfiles | jobbytes    | jobstatus |
++-------+---------------+---------------------+------+-------+----------+-------------+-----------+
+|    23 | BackupClient1 | 2020-01-24 09:05:02 | B    | F     |    5,304 | 772,833,756 | T         |
++-------+---------------+---------------------+------+-------+----------+-------------+-----------+
+*
