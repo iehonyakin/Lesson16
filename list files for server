@@ -1,0 +1,42 @@
+| /etc/alternatives/libbaccats.so                                    |
+| /etc/alternatives/libwbclient.so.0.14-64                           |
+| /etc/alternatives/libnssckbi.so.x86_64                             |
+| /etc/alternatives/ld                                               |
+| /etc/alternatives/mta-aliasesman                                   |
+| /etc/alternatives/mta-sendmailman                                  |
+| /etc/alternatives/mta-newaliasesman                                |
+| /etc/alternatives/mta-mailqman                                     |
+| /etc/alternatives/mta-sendmail                                     |
+| /etc/alternatives/mta-rmail                                        |
+| /etc/alternatives/mta-pam                                          |
+| /etc/alternatives/mta-newaliases                                   |
+| /etc/alternatives/mta-mailq                                        |
+| /etc/alternatives/mta                                              |
+| /etc/alternatives/cifs-idmap-plugin                                |
+| /etc/shells                                                        |
+| /etc/skel/                                                         |
+| /etc/skel/.bashrc                                                  |
+| /etc/skel/.bash_profile                                            |
+| /etc/skel/.bash_logout                                             |
+| /etc/terminfo/                                                     |
+| /etc/grub.d/                                                       |
+| /etc/grub.d/00_tuned                                               |
+| /etc/grub.d/README                                                 |
+| /etc/grub.d/41_custom                                              |
+| /etc/grub.d/40_custom                                              |
+| /etc/grub.d/30_os-prober                                           |
+| /etc/grub.d/20_ppc_terminfo                                        |
+| /etc/grub.d/20_linux_xen                                           |
+| /etc/grub.d/10_linux                                               |
+| /etc/grub.d/01_users                                               |
+| /etc/grub.d/00_header                                              |
+| /etc/resolv.conf                                                   |
+| /etc/mtab                                                          |
+| /etc/crypttab                                                      |
+| /etc/fstab                                                         |
++--------------------------------------------------------------------+
++-------+---------------+---------------------+------+-------+----------+------------+-----------+
+| jobid | name          | starttime           | type | level | jobfiles | jobbytes   | jobstatus |
++-------+---------------+---------------------+------+-------+----------+------------+-----------+
+|    22 | BackupCatalog | 2020-01-24 09:01:03 | B    | F     |    2,455 | 31,476,052 | T         |
++-------+---------------+---------------------+------+-------+----------+------------+-----------+
