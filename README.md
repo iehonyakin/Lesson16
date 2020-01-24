@@ -23,8 +23,7 @@ FileSet {
 }
 # вывод list files jobid=27
 
-Terminated Jobs:
- JobId  Level    Files      Bytes   Status   Finished        Name
+JobId  Level    Files      Bytes   Status   Finished        Name
 ====================================================================
     19  Full          0         0   OK       24-Jan-20 08:52 BackupClient2
     20  Full          0         0   OK       24-Jan-20 09:00 BackupClient1
@@ -132,12 +131,8 @@ Full           Backup    10  25-Jan-20 09:00    BackupClient2      v1
 Full           Backup    11  25-Jan-20 09:01    BackupCatalog      v1
 ====
 
-Running Jobs:
-Console connected at 24-Jan-20 09:24
-No Jobs running.
-====
 
-Terminated Jobs:
+
  JobId  Level    Files      Bytes   Status   Finished        Name
 ====================================================================
     19  Full          0         0   OK       24-Jan-20 08:52 BackupClient2
