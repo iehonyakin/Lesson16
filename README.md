@@ -24,7 +24,7 @@ FileSet {
 # вывод list files jobid=27
 
 JobId  Level    Files      Bytes   Status   Finished        Name
-====================================================================
+
     19  Full          0         0   OK       24-Jan-20 08:52 BackupClient2
     20  Full          0         0   OK       24-Jan-20 09:00 BackupClient1
     21  Full          0         0   OK       24-Jan-20 09:00 BackupClient2
@@ -36,7 +36,7 @@ JobId  Level    Files      Bytes   Status   Finished        Name
     27  Incr          8    154.2 K  OK       24-Jan-20 09:20 BackupClient1
     28  Incr          3    2.196 K  OK       24-Jan-20 09:20 BackupClient2
 
-====
+
 You have messages.
 list files jobid=27
 Automatically selected Catalog: MyCatalog
@@ -111,8 +111,7 @@ Daemon started 24-Jan-20 09:04. Jobs: run=6, running=0 mode=0,0
 
 Scheduled Jobs:
 Level          Type     Pri  Scheduled          Name               Volume
-===================================================================================
-Incremental    Backup    10  24-Jan-20 09:30    BackupClient1      v1
+
 Incremental    Backup    10  24-Jan-20 09:30    BackupClient2      v1
 Differential   Backup    10  24-Jan-20 09:35    BackupClient1      v1
 Differential   Backup    10  24-Jan-20 09:35    BackupClient2      v1
@@ -129,12 +128,12 @@ Incremental    Backup    10  24-Jan-20 10:20    BackupClient2      v1
 Full           Backup    10  25-Jan-20 09:00    BackupClient1      v1
 Full           Backup    10  25-Jan-20 09:00    BackupClient2      v1
 Full           Backup    11  25-Jan-20 09:01    BackupCatalog      v1
-====
+
 
 
 
  JobId  Level    Files      Bytes   Status   Finished        Name
-====================================================================
+
     19  Full          0         0   OK       24-Jan-20 08:52 BackupClient2
     20  Full          0         0   OK       24-Jan-20 09:00 BackupClient1
     21  Full          0         0   OK       24-Jan-20 09:00 BackupClient2
@@ -146,7 +145,48 @@ Full           Backup    11  25-Jan-20 09:01    BackupCatalog      v1
     27  Incr          8    154.2 K  OK       24-Jan-20 09:20 BackupClient1
     28  Incr          3    2.196 K  OK       24-Jan-20 09:20 BackupClient2
 
-====
+
+
+
+
+
+*list jobs
++-------+---------------+---------------------+------+-------+----------+-------------+-----------+
+| jobid | name          | starttime           | type | level | jobfiles | jobbytes    | jobstatus |
++-------+---------------+---------------------+------+-------+----------+-------------+-----------+
+|     1 | BackupClient1 | 2020-01-24 08:06:40 | B    | F     |        0 |           0 | T         |
+|     2 | BackupClient1 | 2020-01-24 08:20:02 | B    | I     |        0 |           0 | T         |
+|     3 | BackupClient2 | 2020-01-24 08:20:05 | B    | F     |        0 |           0 | T         |
+|     4 | BackupClient1 | 2020-01-24 08:30:02 | B    | I     |        0 |           0 | T         |
+|     5 | BackupClient2 | 2020-01-24 08:30:04 | B    | I     |        0 |           0 | T         |
+|     6 | BackupClient1 | 2020-01-24 08:35:03 | B    | F     |        0 |           0 | T         |
+|     7 | BackupClient1 | 2020-01-24 08:35:05 | B    | D     |        0 |           0 | T         |
+|     8 | BackupClient2 | 2020-01-24 08:35:08 | B    | F     |        0 |           0 | T         |
+|     9 | BackupClient2 | 2020-01-24 08:35:10 | B    | D     |        0 |           0 | T         |
+|    10 | BackupClient1 | 2020-01-24 08:40:03 | B    | I     |        0 |           0 | T         |
+|    11 | BackupClient2 | 2020-01-24 08:40:05 | B    | I     |        0 |           0 | T         |
+|    12 | BackupCatalog | 2020-01-24 08:40:08 | B    | F     |        1 |      85,218 | T         |
+|    13 | BackupCatalog | 2020-01-24 08:45:03 | B    | F     |        1 |      88,202 | T         |
+|    14 | BackupClient1 | 2020-01-24 08:50:03 | B    | I     |        0 |           0 | T         |
+|    15 | BackupClient2 | 2020-01-24 08:50:05 | B    | I     |        0 |           0 | T         |
+|    16 | BackupClient1 | 2020-01-24 08:50:34 | B    | I     |        0 |           0 | T         |
+|    17 | BackupClient2 | 2020-01-24 08:50:37 | B    | I     |        0 |           0 | T         |
+|    18 | BackupClient1 | 2020-01-24 08:52:02 | B    | F     |        0 |           0 | T         |
+|    19 | BackupClient2 | 2020-01-24 08:52:05 | B    | F     |        0 |           0 | T         |
+|    20 | BackupClient1 | 2020-01-24 09:00:02 | B    | F     |        0 |           0 | T         |
+|    21 | BackupClient2 | 2020-01-24 09:00:05 | B    | F     |        0 |           0 | T         |
+|    22 | BackupCatalog | 2020-01-24 09:01:03 | B    | F     |    2,455 |  31,476,052 | T         |
+|    23 | BackupClient1 | 2020-01-24 09:05:02 | B    | F     |    5,304 | 772,833,756 | T         |
+|    24 | BackupClient2 | 2020-01-24 09:05:35 | B    | F     |    5,304 | 772,830,371 | T         |
+|    25 | BackupClient1 | 2020-01-24 09:10:02 | B    | I     |        3 |       2,196 | T         |
+|    26 | BackupClient2 | 2020-01-24 09:10:05 | B    | I     |        3 |       2,196 | T         |
+|    27 | BackupClient1 | 2020-01-24 09:20:02 | B    | I     |        8 |     154,247 | T         |
+|    28 | BackupClient2 | 2020-01-24 09:20:05 | B    | I     |        3 |       2,196 | T         |
+|    29 | BackupClient1 | 2020-01-24 09:30:02 | B    | I     |        4 |     151,174 | T         |
+|    30 | BackupClient2 | 2020-01-24 09:30:05 | B    | I     |        6 |     146,340 | T         |
++-------+---------------+---------------------+------+-------+----------+-------------+-----------+
+*
+
 
 
 
