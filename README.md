@@ -22,6 +22,7 @@ FileSet {
   }
 }
 # вывод list files jobid=27
+
 Terminated Jobs:
  JobId  Level    Files      Bytes   Status   Finished        Name
 ====================================================================
@@ -38,7 +39,7 @@ Terminated Jobs:
 
 ====
 You have messages.
-*list files jobid=27
+list files jobid=27
 Automatically selected Catalog: MyCatalog
 Using Catalog "MyCatalog"
 +----------------------------------------+
@@ -72,8 +73,7 @@ FileSet {
     File = /etc  # бекапим ее только
   }
   Exclude {
-   # File = /var/spool/bacula
-    File = /tmp
+        File = /tmp
     File = /proc
     File = /tmp
     File = /.journal
@@ -105,7 +105,7 @@ FileSet {
 
 # Статистика
 
-*status director
+status director
 bacula-dir Version: 5.2.13 (19 February 2013) x86_64-redhat-linux-gnu redhat (Core)
 Daemon started 24-Jan-20 09:04. Jobs: run=6, running=0 mode=0,0
  Heap: heap=135,168 smbytes=104,657 max_bytes=115,598 bufs=306 max_bufs=354
